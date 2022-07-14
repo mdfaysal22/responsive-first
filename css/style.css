@@ -178,7 +178,7 @@ font-family: 'Roboto', sans-serif;
 #header-one .top_header .container-lg .right_top_header form input {
   background-color: transparent;
   border: 2px solid #fe5e15;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
 }
 #header-one .top_header .container-lg .right_top_header form button {
   background-color: #fe5e15;
@@ -191,15 +191,12 @@ font-family: 'Roboto', sans-serif;
 }
 #header-one .top_header .container-lg .right_top_header form input::-moz-placeholder {
   color: #ffffff;
-  padding: 0 0.5rem;
 }
 #header-one .top_header .container-lg .right_top_header form input:-ms-input-placeholder {
   color: #ffffff;
-  padding: 0 0.5rem;
 }
 #header-one .top_header .container-lg .right_top_header form input::placeholder {
   color: #ffffff;
-  padding: 0 0.5rem;
 }
 #header-one .top_header .container-lg .right_top_header form input:focus {
   color: #ffffff;
@@ -374,6 +371,16 @@ font-family: 'Roboto', sans-serif;
   width: 100%;
   background-color: #07183a;
   border: 1px solid #07183a;
+  color: #dddddd;
+}
+#footer_area .footer-main .container-lg .subscribe form input::-moz-placeholder {
+  color: #dddddd;
+}
+#footer_area .footer-main .container-lg .subscribe form input:-ms-input-placeholder {
+  color: #dddddd;
+}
+#footer_area .footer-main .container-lg .subscribe form input::placeholder {
+  color: #dddddd;
 }
 #footer_area .footer-main .container-lg .subscribe form input:focus {
   border: 1px solid #66AFE9;

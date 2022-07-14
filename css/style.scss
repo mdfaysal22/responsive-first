@@ -82,7 +82,7 @@ $deep-navy: #030d23;
                     input{
                         background-color: transparent;
                         border: 2px solid $bright-orange;
-                        padding: 0.5rem 0;
+                        padding: 0.5rem 0.5rem;
                     }
                     button{
                         background-color: $bright-orange;
@@ -95,7 +95,6 @@ $deep-navy: #030d23;
                     }
                     input::placeholder{
                         color: $light-text;
-                        padding: 0 0.5rem;
                     }
                     input:focus{
                         color: $light-text;
@@ -317,6 +316,10 @@ $deep-navy: #030d23;
                         width: 100%;
                         background-color: $navy;
                         border: 1px solid $navy;
+                        color: $light-text-d;
+                    }
+                    input::placeholder{
+                        color: $light-text-d;
                     }
                     input:focus{
                         border: 1px solid #66AFE9;
