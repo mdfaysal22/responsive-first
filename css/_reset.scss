@@ -1,0 +1,37 @@
+// Import Google and Others Font: 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap');
+
+/*
+
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; 
+
+*/ 
+
+// Import Local Font Here.... 
+@font-face {
+    font-family: 'aller';
+    src: url(../font/Aller_Rg.ttf) format("ttf"),
+    url(../font/Aller.woff) format("woff"),
+    url(../font/Aller_Rg.eot) format("eot"),
+    url(../font/Aller.svg#aller) format("svg");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        border: none;
+    }
+}
