@@ -14,13 +14,43 @@
     align-items: center;
     justify-content: center;
 }
+.d-flex-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.d-flex-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
 
 $dark-bg:#020e29;
 $light-text: #ffffff;
+$light-text-d:#dddddd;
 $bright-orange:#fe5e15;
 $dark-text: #555555;
+$navy: #07183a;
+$deep-navy: #030d23;
 
-
+// ScrollBar Design
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: $light-text-d;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $bright-orange;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #a63501;
+}
+::selection{
+    background-color: #fe5e15;
+}
 #header-one{
     .top_header{
         background-color: $dark-bg;
@@ -167,6 +197,145 @@ $dark-text: #555555;
             .btn-cover{
                 button{
                     margin: 0 1rem 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+.test{
+    height: 1000000px;
+    width: 100%;
+}
+
+
+// Footer Section Design Here......
+#footer_area{
+    position: relative;
+    .go_top{
+        position: fixed;
+        bottom: 2rem;
+        left: 92%;
+        a{
+            i{
+                padding: 1rem;
+                font-size: 2rem;
+                color: $light-text;
+                background-color: $bright-orange;
+                border-radius: 5px;
+            }
+        }
+
+    }
+    .footer-main{
+        background-color:$dark-bg;
+        .container-lg{
+            padding: 2rem 0;
+            color: $light-text-d;
+            font-family: 'roboto', sans-serif;
+    
+            .col{
+                width: 30%;
+                .col-area{
+                    p{
+                        line-height: 25px;
+                        margin: 1rem 0;
+                    }
+                    .social_area{
+                        margin: 1rem 0;
+                        li{
+                            padding-right: 1rem;
+                            a{
+                              
+                                i{
+                                    color: $light-text;  
+                                    text-align: center;
+                                    padding: 10px;
+                                    border-radius: 100%;
+                                    border: 2px solid $bright-orange;
+                                    background-color: $bright-orange;
+                                    
+                                }
+                            }
+                        }
+                        li:first-child{
+                            a{
+                                i{
+                                    padding: 10px 13px;
+                                }
+                            }
+                        }
+                        li:hover{
+                            a{
+                                i{
+                                    border: 2px solid $bright-orange;
+                                    background-color: transparent;
+                                    color: $bright-orange;
+                                }
+                            }
+                        }
+                        
+                    }
+    
+                }
+            }
+            .services-link{
+                h4{
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    padding-bottom: 1rem;
+                }
+                .col-1-area{
+                    .col-1{
+                        margin-right: 4rem;
+                        li{
+                            padding: 0.5rem 0;
+                            a{
+                                color: $light-text-d;
+                            }
+                        }
+                        li:hover{
+                            a{
+                                color: $bright-orange;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe{
+                h2{
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    padding-bottom: 1rem;
+                }
+                form{
+                    margin-top: 1rem;
+                    input{
+                        padding: 1rem 0.5rem;
+                        margin-bottom: 0.5rem;
+                        width: 100%;
+                        background-color: $navy;
+                        border: 1px solid $navy;
+                    }
+                    input:focus{
+                        border: 1px solid #66AFE9;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        background-color: $deep-navy;
+        .container-lg{
+            h2{
+                font-size: 1.1rem;
+                font-weight: lighter;
+                padding: 2rem 0;
+                font-family: 'lato', sans-serif;
+                color: $light-text;
+                span{
+                    color: $bright-orange;
                 }
             }
         }
