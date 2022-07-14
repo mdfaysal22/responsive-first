@@ -18,6 +18,7 @@
 $dark-bg:#020e29;
 $light-text: #ffffff;
 $bright-orange:#fe5e15;
+$dark-text: #555555;
 
 
 #header-one{
@@ -26,6 +27,9 @@ $bright-orange:#fe5e15;
         color: $light-text;
         .container-lg{
             .left_top_header{
+                .col:first-child{
+                    margin-left: 0;
+                }
                 .col{
                     margin: 1rem 1rem;
                     font-family: 'roboto', sans-serif;
@@ -65,6 +69,79 @@ $bright-orange:#fe5e15;
                     }
                     input:focus{
                         color: $light-text;
+                    }
+                }
+            }
+        }
+    }
+    // CSs For Manu and Logo
+    .navber{
+
+        .container-lg{
+            .logo{
+                background-color: $bright-orange;
+                position: relative;
+                h1{
+                    font-family: 'aller',sans-serif;
+                    padding: 1.77rem 0;
+                    padding-right: 2rem;
+                    color: $light-text;
+                }
+            }
+            .logo::before{
+                content: '';
+                background-color: $bright-orange;
+                width: 100px;
+                height: 100%;
+                top: 0;
+                left: -100px;
+                position: absolute;
+            }
+            .logo::after{
+                content: "";
+                background-color: #fe5e12;
+                top: 0;
+                position: absolute;
+                left: 100px;
+                z-index: -1000;
+                width: 100px;
+                height: 100%;
+                transform: skewX(31deg);
+            }
+
+            .menu{
+                ul{
+                    li{
+                        padding: 2rem 1.5rem;
+                        position: relative;
+                        cursor: pointer;
+                        a{
+                            font-family: 'montserrat', sans-serif;
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                            color: $dark-text;
+                        }
+                    }
+                    li:hover{
+                        a{
+                            color: $bright-orange;
+                        }
+                    }
+                    li::before{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        background-color: $bright-orange;
+                        top: 0;
+                        left: 0;
+                        transition: 0.8s;
+                    }
+                    li:hover::before{
+                        width: 100%;
+                    }
+                    li:last-child{
+                        padding-right: 0;
                     }
                 }
             }

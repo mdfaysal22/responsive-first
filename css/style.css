@@ -114,6 +114,9 @@ font-family: 'Roboto', sans-serif;
   background-color: #020e29;
   color: #ffffff;
 }
+#header-one .top_header .container-lg .left_top_header .col:first-child {
+  margin-left: 0;
+}
 #header-one .top_header .container-lg .left_top_header .col {
   margin: 1rem 1rem;
   font-family: "roboto", sans-serif;
@@ -160,4 +163,64 @@ font-family: 'Roboto', sans-serif;
 }
 #header-one .top_header .container-lg .right_top_header form input:focus {
   color: #ffffff;
+}
+#header-one .navber .container-lg .logo {
+  background-color: #fe5e15;
+  position: relative;
+}
+#header-one .navber .container-lg .logo h1 {
+  font-family: "aller", sans-serif;
+  padding: 1.77rem 0;
+  padding-right: 2rem;
+  color: #ffffff;
+}
+#header-one .navber .container-lg .logo::before {
+  content: "";
+  background-color: #fe5e15;
+  width: 100px;
+  height: 100%;
+  top: 0;
+  left: -100px;
+  position: absolute;
+}
+#header-one .navber .container-lg .logo::after {
+  content: "";
+  background-color: #fe5e12;
+  top: 0;
+  position: absolute;
+  left: 100px;
+  z-index: -1000;
+  width: 100px;
+  height: 100%;
+  transform: skewX(31deg);
+}
+#header-one .navber .container-lg .menu ul li {
+  padding: 2rem 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+#header-one .navber .container-lg .menu ul li a {
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #555555;
+}
+#header-one .navber .container-lg .menu ul li:hover a {
+  color: #fe5e15;
+}
+#header-one .navber .container-lg .menu ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fe5e15;
+  top: 0;
+  left: 0;
+  transition: 0.8s;
+}
+#header-one .navber .container-lg .menu ul li:hover::before {
+  width: 100%;
+}
+#header-one .navber .container-lg .menu ul li:last-child {
+  padding-right: 0;
 }/*# sourceMappingURL=style.css.map */
