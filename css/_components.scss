@@ -1,0 +1,62 @@
+$btn-regular: #fe5e15;
+$btn-regular-border: #fe5e15;
+$btn-light: #ffffff;
+$btn-light-border: #ffffff;
+$btn-regular-text: #ffffff;
+
+@mixin btn-defalt{
+    border-radius: 5px;
+    padding: 10px 35px;
+    a{
+        font-size: 1.1rem;
+        font-weight: bold;        
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2.5px;
+    }
+}
+
+.btn{
+    @include btn-defalt();
+    border: 1px solid $btn-regular-border;
+    background-color: $btn-regular;
+    
+
+    a{
+
+        color: $btn-regular-text;
+
+    }
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid $btn-light-border;
+}
+
+.btn-light{
+    @include btn-defalt();
+    border: 1px solid $btn-light-border;
+    background-color: transparent;
+    a{
+        color: $btn-regular-text;
+    }
+}
+.btn-light:hover{
+    background-color: $btn-regular;
+    border: 1px solid $btn-regular-border;
+}
+
+.btn-bright-orange{
+    @include btn-defalt();
+    background-color: $btn-regular;
+    border: 1px solid $btn-regular-border;
+    a{
+        color: $btn-regular-text;
+    }
+}
+.btn-bright-orange:hover{
+    background-color: transparent;
+    border: 1px solid $btn-regular-border;
+    a{
+        color: #fe5e15;
+    }
+}

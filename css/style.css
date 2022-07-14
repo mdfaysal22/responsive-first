@@ -15,6 +15,7 @@ font-family: 'Roboto', sans-serif;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  transition: all 0.4s ease;
 }
 * ul {
   list-style: none;
@@ -24,4 +25,74 @@ font-family: 'Roboto', sans-serif;
 }
 * button {
   border: none;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px 35px;
+  border: 1px solid #fe5e15;
+  background-color: #fe5e15;
+}
+.btn a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2.5px;
+}
+.btn a {
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn-light {
+  border-radius: 5px;
+  padding: 10px 35px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.btn-light a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2.5px;
+}
+.btn-light a {
+  color: #ffffff;
+}
+
+.btn-light:hover {
+  background-color: #fe5e15;
+  border: 1px solid #fe5e15;
+}
+
+.btn-bright-orange {
+  border-radius: 5px;
+  padding: 10px 35px;
+  background-color: #fe5e15;
+  border: 1px solid #fe5e15;
+}
+.btn-bright-orange a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2.5px;
+}
+.btn-bright-orange a {
+  color: #ffffff;
+}
+
+.btn-bright-orange:hover {
+  background-color: transparent;
+  border: 1px solid #fe5e15;
+}
+.btn-bright-orange:hover a {
+  color: #fe5e15;
+}
+
+body {
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */
